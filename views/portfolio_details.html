@@ -1,0 +1,99 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+{{ template "head.html"}}
+<body id="portfolio-details">
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://www.cssmoban.com/">Upgrade to a different browser</a> or install Google Chrome Frame</a> to experience this site.</p>
+<![endif]-->
+	<!-- Logo, Headline, Navigation -->
+    {{ template "navigation.html"}}
+	<!-- / Logo, Headline, Navigation -->
+
+	<!-- Portfolio Details Page -->
+    <section id="content" role="main" class="container">
+
+        <h1 class="span8">
+            {{if ne .github_title ""}}
+                <a href="{{ .github_url}}" target="_blank"  >  <i class="fa fa-github fa-2x"></i> {{ .github_title }} </a>
+                {{else}}
+                {{ .name}}
+            {{end}}
+
+        </h1>
+
+        <!-- <div id="details" class="span8"><img src="img/details_1.jpg" alt="Image title"></div> -->
+
+        <div class="span8">
+            <div id="details" class="content-slider compact-nan">
+                <div class="flexslider">
+                    <ul class="slides">
+                        {{if ne .img1 ""}}
+                            <li><img src="{{.img1}}" alt="Image 1" /></li>
+                        {{end}}
+                        {{if ne .img2 ""}}
+                            <li><img src="{{.img2}}" alt="Image 2" /></li>
+                        {{end}}
+                        {{if ne .img3 ""}}
+                            <li><img src="{{.img3}}" alt="Image 3" /></li>
+                        {{end}}
+                        {{if ne .img4 ""}}
+                            <li><img src="{{.img4}}" alt="Image 4" /></li>
+                        {{end}}
+                        {{if ne .img5 ""}}
+                            <li><img src="{{.img5}}" alt="Image 5" /></li>
+                        {{end}}
+                        {{if ne .img6 ""}}
+                            <li><img src="{{.img6}}" alt="Image 6" /></li>
+                        {{end}}
+                        {{if ne .img7 ""}}
+                            <li><img src="{{.img7}}" alt="Image 7" /></li>
+                        {{end}}
+                        {{if ne .img8 ""}}
+                            <li><img src="{{.img8}}" alt="Image 8" /></li>
+                        {{end}}
+                        {{if ne .img9 ""}}
+                            <li><img src="{{.img9}}" alt="Image 9" /></li>
+                        {{end}}
+                        {{if ne .img10 ""}}
+                            <li><img src="{{.img10}}" alt="Image 10" /></li>
+                        {{end}}
+                    </ul>
+                </div>
+            </div>      
+           
+           <p style="white-space: pre-line;">{{.detail}}</p>
+         
+           
+        </div>
+
+        <div class="span4">
+            <p class="meta" style="float: right;">{{ .period }}</p>
+
+            <br>
+            {{ if ne .goal "" }}
+            <p style="float:left; white-space: pre-line;">{{.goal}}</p>           
+            {{ end }}
+
+             <a href="/views/portfolio.html" class="button full" >&larr; Return to Side Project </a>
+        </div>
+
+    </section>
+    <!-- / #content - Portfolio Details Page -->
+
+
+
+	<!-- Footer -->
+    {{ template "footer.html"}}
+     <!-- / #main-footer -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/public/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+<script src="/public/js/plugins.js"></script>
+<script src="/public/js/script.js"></script>
+
+</body>
+</html>

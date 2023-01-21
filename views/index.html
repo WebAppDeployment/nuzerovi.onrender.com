@@ -1,0 +1,128 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+{{ template "head.html"}}
+
+<body id="home">
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://www.cssmoban.com/">
+Upgrade to a different browser</a> or install Google Chrome Frame</a> to experience this site.</p>
+<![endif]-->
+
+	<!-- Logo, Headline, Navigation -->
+	<header id="main-header" class="container">
+		<div class="span12">
+
+			<div id="logo">
+				<a href="/views/index.html"><h1 style="color: white; margin-bottom:0px;">Jing-Ru's  Website</h1>   </a>
+			</div>
+
+			<!-- <hgroup id="logo">
+			  <h1>Andante /</h1>
+			  <h2>Elegant Responsive HTML5 Template</h2>
+			</hgroup> -->
+
+			<div id="nav-toggle">
+				<a href="#" data-target=".expandable-nav" class="button">menu</a>
+			</div>
+
+			<nav id="main-nav" class="clearfix">
+				<ul class="dropdown">
+					<li  class="current" ><a href="/views/index.html">Home</a></li>
+					<li><a href="/views/portfolio.html">side project</a></li>
+				</ul> <!-- / .dropdown -->
+			</nav> <!-- / #main-nav -->
+
+		</div> <!-- / span12 div -->
+	</header> <!-- / Logo, Headline, Navigation -->
+	
+	<!-- About Page -->
+	{{ template "about.html"}}
+	<!-- Main Content, 2 and 3 columns layout -->
+	<section id="content" role="main" class="container">
+
+		<!-- Portfolio -->
+		<!-- 3 Columns -->
+		<div class="three-columns">
+			<!-- Heading Text -->
+			<div class="striped-heading span12">
+				<h1>Portfolio</h1>
+				<div class="decoration"></div>
+			</div>
+
+			<!-- Media Object - Image + Caption -->
+			<div class="span4">
+				<div class="media">					
+				  <div class="video object">
+					  <img src="/public/image/portfolio/VolumeVis/interface.png" alt="Master Thesis">
+				  </div>
+				  <div class="caption">
+					 <h3 style="font-weight: bold;">Interactive Occlusion-Free System for Volume Exploration [Master] </h3>
+					  <div class="hr_small"></div>
+					  <p>We propose a progressive digging interaction to allow non-expert users’ exploration approach, which is intuitive and closer to daily life behavior.</p>
+					  <p>
+						<div class="button mini" style="border-radius: 20px; background-color: #0066ee94;"># Volume-Visualization  </div>					
+						<div class="button mini" style="border-radius: 20px; background-color: #0066ee94;"># Human-Computer Interaction (HCI)  </div>					
+						<div class="button mini" style="border-radius: 20px; background-color: #0066ee94;"># Shaderlab </div>		
+						<div class="button mini" style="border-radius: 20px; background-color: #0066ee94;"># Unity </div>	
+					  </p>
+					  <p><a href="/sideproject/portfolio_details.html?projectID=9" class="button" style="background-color: #800000; float: right;">In more detail &rarr;</a></p>
+				  </div>
+				</div>
+			</div>
+
+			<div class="span4">
+				<div class="media">					
+				  <div class="video object">
+					  <img src="/public/image/portfolio/mes2.png" alt="Intern">
+				  </div>
+				  <div class="caption">
+					 <h3 style="font-weight: bold;">Manufacturing Execution System [College Intern] </h3>
+					  <div class="hr_small"></div>
+					  <p>We want to speed up processes with work order dispatch and design GUI  makes it easy to use.</p>
+					  <p>									
+						<div class="button mini" style="border-radius: 20px; background-color: #0066ee94;"># Human-Computer Interaction (HCI)  </div>	
+						<div class="button mini" style="border-radius: 20px; background-color: #0066ee94;"># GUI Design  </div>				
+						<div class="button mini" style="border-radius: 20px; background-color: #0066ee94;"># SQL Server </div>		
+						<div class="button mini" style="border-radius: 20px; background-color: #0066ee94;"># PowerBuilder </div>	
+					  </p>
+					<p><a href="/sideproject/portfolio_details.html?projectID=1" class="button" style="background-color: #800000; float: right;">In more detail &rarr;</a></p>
+				  </div>
+				</div>
+			</div>
+	
+			<!-- Media Object - Image + Caption -->
+			<div class="span4">
+			  <div class="media">
+			  	<a class="object">
+					<img src="/public/image/portfolio/learn_sys/p2_1.png" alt="Image title"></a>
+			    <div class="caption">
+			    	<h3 style="font-weight: bold;">Learning System [Bachelor]</h3>
+			    	<div class="hr_small"></div>
+					<p>We want to make users learning efficiency and provided some learning videos about animation.</p>
+					<p>		
+						<div class="button mini" style="border-radius: 20px; background-color: #0066ee94;"># Laravel Framework (Website)</div>		
+						<div class="button mini" style="border-radius: 20px; background-color: #0066ee94;"># IoT Remote Control (iOS App)  </div>							
+						<div class="button mini" style="border-radius: 20px; background-color: #0066ee94;"># Arduino + ESP8266 Wi-Fi MCU</div>	
+					</p>
+			    	<p><a href="/sideproject/portfolio_details.html?projectID=2" class="button" style="background-color: #800000; float: right;">In more detail &rarr;</a></p>
+			    </div>
+			  </div>
+			</div> <!-- / Media Object -->
+
+		</div> <!-- / 3 Columns -->
+
+	</section> <!-- / Main Content -->
+
+	{{ template "footer.html"}}
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/public/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+<script src="/public/js/plugins.js"></script>
+<script src="/public/js/script.js"></script>
+
+</body>
+</html>

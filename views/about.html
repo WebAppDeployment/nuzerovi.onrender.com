@@ -1,0 +1,43 @@
+{{ define "about.html"}}
+    <!-- Page with Sidebar -->
+    <section id="content" role="main" class="container">
+        <div class="span12 hr_pattern"></div>
+
+        <!-- Content column -->
+        <div class="span8">
+       
+            <div class="striped-heading span12">
+				<h3 style="font-weight: bold;">-/ About Me /-</h3>				
+			</div>     
+            <p>I recently finished my <span style="color:orange;">master's degree</span> in Computer Science at Nation Taiwan Normal University (NTNU). 
+                During my two-year of study, I had a strong interest in the field of <span style="color:orange;">computer graphics</span>, and when I joined the Visual Data Analysis (ViDA) Laboratory, 
+                I was a <span style="color:orange;">teaching assistant</span> in computer graphics course and a member of the 2022 Computer Graphics <span style="color:orange;">Workshop (CGW) staff</span>.</p>
+            <div style="margin-top: 10px;" class="striped-heading span12">
+				<h3  style="font-weight: bold;">-/ My Research /-</h3>				
+			</div>  
+            <p>My primary research goal is to address the issue of <span style="color:orange;">data occlusion in 3D space</span>. 
+                In order to provide non-expert users with simple learning and exploration of complex 3D volumes, 
+                we have developed <span style="color:orange;">a 3D volume interactive exploration system</span> for use in medical, education, and museum exhibitions, among other applications.
+                During the previous two-years of research, I've also read serveral papers on <span style="color:orange;">occlusion management </span>, <span style="color:orange;">volume deformation</span>, and <span style="color:orange;">labeling of volume structure.</span></p>
+        </div> <!-- / Content column -->
+
+        <!-- Sidebar -->
+        <aside class="span4">
+            
+            <h2  style="font-weight: bold;">Contact</h2>
+            <div style="display: flex; justify-content: center;" class="span4 portfolio">               
+                <img style="border-radius: 20px;" src="/public/image/IMG-6093.jpg" alt="">                            
+            </div>
+          
+            <div style="margin-top: 12px;" class="span4 portfolio">        
+            <ul class="side-nav">
+                <li><a href="#"><i class="fa fa-phone fa-lg"></i> 0988621848</a></li>
+                <li><a href="mailto: nuvmcdxliv@gmail.com"><i class="fa fa-envelope fa-lg"></i> nuvmcdxliv@gmail.com</a></li>
+                <li><a href="https://github.com/NUZEROVI" target="_blank"><i class="fa fa-github fa-lg"></i> NUZEROVI (SUN) </a></li>             
+                <li><a href="/views/resume.html" target="_blank" ><i class="fa fa-user fa-2x"></i> View My Resume &rarr; </a></li> <!-- https://nuzerovi.onrender.com/-->
+            </ul>
+            </div>
+            
+        </aside>
+    </section>
+{{ end }}
