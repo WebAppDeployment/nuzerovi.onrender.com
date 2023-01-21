@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"nuzerovi.onrender.com/models"
-	"nuzerovi.onrender.com/routers"
+	"github.com/NUZEROVI/nuzerovi.onrender.com/models"
+	"github.com/NUZEROVI/nuzerovi.onrender.com/routers"
 
 	"runtime"
 

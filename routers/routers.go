@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"nuzerovi.onrender.com/controllers/project"
-	"nuzerovi.onrender.com/lib/ini"
+	"github.com/NUZEROVI/nuzerovi.onrender.com/controllers/project"
+	"github.com/NUZEROVI/nuzerovi.onrender.com/lib/ini"
 
 	"github.com/gin-gonic/gin"
 )

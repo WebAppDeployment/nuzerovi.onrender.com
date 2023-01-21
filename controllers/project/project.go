@@ -3,7 +3,7 @@ package project
 import (
 	"net/http"
 
-	"nuzerovi.onrender.com/models"
+	"github.com/NUZEROVI/nuzerovi.onrender.com/models"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/go-sql-driver/mysql"
