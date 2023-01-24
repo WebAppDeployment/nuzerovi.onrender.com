@@ -27,8 +27,9 @@
         <!-- <div id="details" class="span8"><img src="img/details_1.jpg" alt="Image title"></div> -->
 
         <div class="span8">
-            <div id="details" class="content-slider compact-nan">
-                <div class="flexslider">
+            <div class="nested">
+                <div id="details" class="content-slider compact-nav span8">
+                  <div class="flexslider">
                     <ul class="slides">
                         {{if ne .img1 ""}}
                             <li><img src="{{.img1}}" alt="Image 1" /></li>
@@ -61,13 +62,16 @@
                             <li><img src="{{.img10}}" alt="Image 10" /></li>
                         {{end}}
                     </ul>
+                  </div>
                 </div>
-            </div>      
-           
-           <p style="white-space: pre-line;">{{.detail}}</p>
-         
-           
+                <div class="hr_small" ></div>
+                <p style="white-space: pre-line; font-size: 14px;">{{.detail}}</p>   
+                <div class="hr_pattern"></div>
+              </div>
+
         </div>
+
+       
 
         <div class="span4">
             <p class="meta" style="float: right;">{{ .period }}</p>
