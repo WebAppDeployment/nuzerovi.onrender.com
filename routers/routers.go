@@ -11,7 +11,6 @@ import (
 	"time"
 
 	"github.com/NUZEROVI/nuzerovi.onrender.com/controllers/project"
-	"github.com/NUZEROVI/nuzerovi.onrender.com/lib/ini"
 
 	"github.com/gin-gonic/gin"
 )
@@ -157,8 +156,7 @@ func StartGin() {
 }
 
 // [.ini file configuration]
-var url string // global var
+// var url string // global var
 func index(c *gin.Context) {
-	url = ini.Main()
-	c.Redirect(http.StatusTemporaryRedirect, url)
+	c.Redirect(http.StatusTemporaryRedirect, "/views/index.html")
 }
