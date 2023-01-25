@@ -22,7 +22,7 @@ html {
 }
 body {
   color: #eee;
-  background: url('../public/img/content/background.png') #1c1c1cf2 repeat top center;
+  background: url('../img/content/background.png') #1c1c1cf2 repeat top center;
   font-family: "Source Code Pro", monospace;
   font-size: 16.5px;
   line-height: 1.9;
